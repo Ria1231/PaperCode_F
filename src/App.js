@@ -20,12 +20,16 @@ function App() {
       <button 
        className={show === 'skills' ? 'active': '' }
       onClick={()=>setShow('skills')}>Skills</button>
+      {/* <button 
+       className={show === 'projects' ? 'active': '' }
+      onClick={()=>setShow('projects')}>Projects</button> */}
     </div>
 
     <div className='components'>
       {show === 'details' ? <Details />: '' }
       {show === 'academicdetails' ? <AcademicDetails />: '' }
-      {show === 'skills' ? <Skills /> : ''}     
+      {show === 'skills' ? <Skills /> : ''} 
+      {/* {show === 'projects' ? <Projects /> : ''}      */}
     </div>
     </>
   );
