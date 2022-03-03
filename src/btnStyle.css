@@ -1,0 +1,43 @@
+.navstyle{
+    width: 100%;
+    height: 100%;
+    background-color: #6ab046;
+    color: antiquewhite;
+}
+.navstyle button{
+    height: 50px;
+    width: 33.33%;
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    color: blueviolet;
+    border-width: 2;
+    border-color: blueviolet;
+}
+button.active{
+    background-color: blueviolet;
+    color: aliceblue;
+}
+.components{
+    padding-top: 30px;
+    background-color: rgb(238, 237, 237);
+    width: 100%;
+    height: 600px;
+    /* align-items: center;
+    text-align: center; */
+}
+table{
+    width: 100%;
+}
+table td{
+    text-align: center;
+}
+table tr{
+    border-width: 1px;
+    border-color: black;
+}
+
+ul li{
+    /* list-style-type: none; */
+    
+}
