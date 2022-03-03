@@ -3,6 +3,7 @@ import './App.css';
 import Skills from './components/Skills';
 import AcademicDetails from './components/AcademicDetails';
 import Details from './components/Details';
+import Project from './components/Projects';
 import { useState } from 'react';
 import './btnStyle.css';
 
@@ -30,7 +31,12 @@ function App() {
       {show === 'academicdetails' ? <AcademicDetails />: '' }
       {show === 'skills' ? <Skills /> : ''} 
       {/* {show === 'projects' ? <Projects /> : ''}      */}
+     
     </div>
+    <div className='project'>
+      <Project />
+    </div>
+   
     </>
   );
 }
