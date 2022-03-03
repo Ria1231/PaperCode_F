@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript - Array Of Name </title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+    <h2>Get An Array Of Your Name</h2>
+    <label>Enter a Character : </label>
+    <input type="text" id="input1" />
+    <Button id="button1">Convert</Button>
+    <p><span id="ascii_str"></span></p>
+    <hr>
+    
+</body>
+<script>
+// Ascii Value Convert    
+$("#button1").click(function(){
+
+    var str=$("#input1").val();  
+    var array_value = [];
+
+    for (let i = 0; i <=  str.length-1; i++) {
+        
+        var arr = str.charCodeAt(i);
+        array_value.push(arr);
+    }
+   
+    $("#ascii_str").text("Array of  '"+str+"' is: ["+array_value+"]");
+});
+
+</script>
+</html>
